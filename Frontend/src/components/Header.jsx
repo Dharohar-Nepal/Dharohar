@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Logo from '../assets/images/dharohar.png'
 
 export default function Header() {
     return (
@@ -30,7 +31,7 @@ export default function Header() {
                             <li><Link to={'/contact'}>Contact</Link></li>
                         </ul>
                     </div>
-                    <a className="btn btn-ghost text-xl">daisyUI</a>
+                    <img src={Logo} alt="Logo" className='w-28'/>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
@@ -38,6 +39,7 @@ export default function Header() {
                         <li><Link to={'/explore'}>Explore</Link></li>
                         <li><Link to={'/articles'}>Articles</Link></li>
                         <li><Link to={'/contact'}>Contact</Link></li>
+                        <li><Link to={'/chat'}>Chat</Link></li>
                     </ul>
                 </div>
                 <div className="navbar-end">
