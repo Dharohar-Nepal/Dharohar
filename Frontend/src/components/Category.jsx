@@ -1,7 +1,19 @@
-import React from 'react'
 import Card from './Card';
+import React, { useContext, useState } from 'react';
+import { AppContext } from '../context/context';
 
-export default function Category() {  
+export default function Category() {
+
+  const { item } = useContext(AppContext);
+  const [filter, setFilter] = useState(item)
+
+  const filteredData = (category) => {
+
+    const filteredItems = item.filter((p) => p.category === 'category'      
+      setFilter(filteredItems)
+    )
+  }
+  console.log(filteredData)
 
   return (
     <>
@@ -15,7 +27,7 @@ export default function Category() {
         </div>
 
         <div>
-          <Card items={items}/>
+          <Card />
         </div>
       </div>
     </>

@@ -1,14 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Category from '../components/Category'
 import Testimonials from '../components/Testimonials'
 import Search from '../components/Search'
 
-export default function Home({items}) {
+
+const Home = () => {
   return (
-    <div>
-      <Search />
-      <Category items={items} />
-      <Testimonials />
-    </div>
+    <>
+      <div>
+        <Search />
+        <Category />
+        <Testimonials />
+      </div>
+    </>
   )
 }
+
+export default Home

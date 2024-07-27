@@ -1,5 +1,5 @@
 import React from 'react'
-import Logos from '../assets/images/dharohar.png'
+import roshan from '../assets/images/roshan.jpeg'
 
 export default function Testimonials() {
   return (
@@ -7,13 +7,13 @@ export default function Testimonials() {
       <div>
         <h1 className='font-bold text-3xl text-center text-zinc-500'>Testimonials</h1>
 
-        <div className='flex justify-center gap-5 mb-10'>
+        <div className='flex justify-center gap-5 mb-10 flex-wrap'>
           <div className="card bg-base-100 w-96 shadow-xl">
             <figure className="px-10 pt-10">
               <img
-                src={Logos}
+                src={roshan}
                 alt="Shoes"
-                className="rounded-xl" />
+                className="rounded-xl  overflow-hidden" />
             </figure>
             <div className="card-body items-center text-center">
               <h2 className="card-title">Dhiraj Pant</h2>
@@ -26,9 +26,9 @@ export default function Testimonials() {
           <div className="card bg-base-100 w-96 shadow-xl">
             <figure className="px-10 pt-10">
               <img
-                src={Logos}
+                src={roshan}
                 alt="Shoes"
-                className="rounded-xl" />
+                className="rounded-xl  overflow-hidden" />
             </figure>
             <div className="card-body items-center text-center">
               <h2 className="card-title">Dhiraj Pant</h2>
@@ -41,9 +41,9 @@ export default function Testimonials() {
           <div className="card bg-base-100 w-96 shadow-xl">
             <figure className="px-10 pt-10">
               <img
-                src={Logos}
+                src={roshan}
                 alt="Shoes"
-                className="rounded-xl" />
+                className="rounded-xl  overflow-hidden" />
             </figure>
             <div className="card-body items-center text-center">
               <h2 className="card-title">Dhiraj Pant</h2>
@@ -56,9 +56,9 @@ export default function Testimonials() {
           <div className="card bg-base-100 w-96 shadow-xl">
             <figure className="px-10 pt-10">
               <img
-                src={Logos}
+                src={roshan}
                 alt="Dhiraj Pant"
-                className="rounded-xl" />
+                className="rounded-xl  overflow-hidden" />
             </figure>
             <div className="card-body items-center text-center">
               <h2 className="card-title">Dhiraj Pant</h2>
