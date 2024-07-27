@@ -3,11 +3,11 @@ import Category from '../components/Category'
 import Testimonials from '../components/Testimonials'
 import Search from '../components/Search'
 
-export default function Home() {
+export default function Home({items}) {
   return (
     <div>
       <Search />
-      <Category />
+      <Category items={items} />
       <Testimonials />
     </div>
   )
