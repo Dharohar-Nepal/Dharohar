@@ -25,7 +25,7 @@ export default function Card({ items }) {
             </div>
           </div>
         ))}
-      </div>
+      </div> 
     </>
   );
 }
