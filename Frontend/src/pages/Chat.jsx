@@ -6,9 +6,9 @@ export default function Chat() {
     <>
     <div className="flex justify-center">
 
-      <button className="bg-zinc-400 p-3 rounded-lg m-10">
+      {/* <button className="bg-zinc-400 p-3 rounded-lg m-10">
         <Link to='https://dharohar-bot.streamlit.app/' target="blank">Chat</Link>
-      </button>
+      </button> */}
     </div>
     </>
   );

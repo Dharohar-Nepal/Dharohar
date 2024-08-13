@@ -6,9 +6,9 @@ export default function Explore() {
     <>
     <div className="flex justify-center">
 
-      <button className="bg-zinc-400 p-3 rounded-lg m-10">
+      {/* <button className="bg-zinc-400 p-3 rounded-lg m-10">
         <Link to='https://dharohar.streamlit.app/' target="blank">Explore</Link>
-      </button>
+      </button> */}
     </div>
     </>
   );
