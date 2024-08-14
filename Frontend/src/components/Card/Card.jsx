@@ -15,7 +15,7 @@ export default function Card({ items }) {
                 <h2 className="card-title">{value.place}</h2>
                 <p>{value.location}</p>
               </div>
-              <button className="btn bg-orange-400 hover:bg-orange-300">Read More</button>
+              <button className="btn bg-orange-400 hover:bg-orange-300">Know More</button>
             </div>
           </div>
         ))}
