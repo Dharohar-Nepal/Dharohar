@@ -10,6 +10,7 @@ import Contact from "./pages/Contact";
 import Login from "./pages/Login";
 import Card from "./components/Card/Card";
 import Description from "./components/Description";
+import About from "./components/About";
 
 export default function () {
   return (
@@ -24,6 +25,7 @@ export default function () {
           <Route path="/articles" element={<Articles />} />
           <Route path="/chat" element={<Chat />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/about" element={<About />} />
           <Route path="/card/:id" element={<Description />} />
         </Routes>
         <Footer />

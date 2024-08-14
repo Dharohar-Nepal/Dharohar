@@ -28,22 +28,25 @@ export default function Header() {
                             <li><Link to={'/'}>Home</Link></li>
                             <li><Link to={'/explore'}>Explore</Link></li>
                             <li><Link to={'/articles'}>Articles</Link></li>
+                            <li><Link to={'/chat'}>Chat</Link></li>
+                            <li><Link to={'/about'}>About</Link></li>
                             <li><Link to={'/contact'}>Contact</Link></li>
                         </ul>
                     </div>
                     <img src={Logo} alt="Logo" className='w-[140px]'/>
                 </div>
                 <div className="navbar-center hidden lg:flex ">
-                    <ul className="menu menu-horizontal px-1 text-lg">
-                        <li><Link to={'/'}>Home</Link></li>
-                        <li><Link to={'./explore'}>Explore</Link></li>
-                        <li><Link to={'/articles'}>Articles</Link></li>
-                        <li><Link to={'/contact'}>Contact</Link></li>
-                        <li><Link to={'./chat'}>Chat</Link></li>
+                    <ul className="menu menu-horizontal px-1 text-lg ">
+                        <li className='hover:bg-orange-400 rounded-xl'><Link to={'/'}>Home</Link></li>
+                        <li className='hover:bg-orange-400 rounded-xl'><Link to={'./explore'}>Explore</Link></li>
+                        <li className='hover:bg-orange-400 rounded-xl'><Link to={'/articles'}>Articles</Link></li>
+                        <li className='hover:bg-orange-400 rounded-xl'><Link to={'./chat'}>Chat</Link></li>
+                        <li className='hover:bg-orange-400 rounded-xl'><Link to={'./about'}>About</Link></li>
+                        <li className='hover:bg-orange-400 rounded-xl'><Link to={'/contact'}>Contact</Link></li>
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <Link to={'/login'} className="btn bg-orange-400 border-none px-5">Login</Link>
+                    <Link to={'/login'} className="px-5 py-3 rounded-xl hover:bg-orange-200 bg-orange-400">Login</Link>
                 </div>
             </div>
         </>
