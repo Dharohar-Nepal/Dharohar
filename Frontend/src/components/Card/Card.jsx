@@ -13,6 +13,7 @@ export default function Card({ items }) {
               </figure>
               <div className="card-body">
                 <h2 className="card-title">{value.place}</h2>
+                <p>{value.location}</p>
               </div>
               <button className="btn bg-orange-400 hover:bg-orange-300">Read More</button>
             </div>
