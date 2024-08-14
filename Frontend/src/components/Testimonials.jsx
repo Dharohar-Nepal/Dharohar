@@ -6,7 +6,7 @@ export default function Testimonials() {
     <>
       <div className="my-6 font-[sans-serif] max-w-6xl mx-auto">
       <div className="max-w-2xl mx-auto text-center">
-        <h2 className="text-3xl font-extrabold text-gray-800">What our happy client say</h2>
+        <h2 className="text-3xl font-extrabold text-gray-800">Their Travels, Our Passion<br /> Join the Experience</h2>
         
       </div>
 
