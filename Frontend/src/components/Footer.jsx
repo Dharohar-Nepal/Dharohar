@@ -5,15 +5,7 @@ export default function Footer() {
   return (
     <>
       <footer className="footer footer-center bg-base-200 text-base-content rounded p-10">
-        <nav className="grid grid-flow-col gap-4">
-          <ul className='flex gap-5'>
-            <li><Link to={'/'}>Home</Link></li>
-            <li><Link to={'/explore'}>Explore</Link></li>
-            <li><Link to={'/articles'}>Articles</Link></li>
-            <li><Link to={'/contact'}>Contact</Link></li>
-            <li><Link to={'/chat'}>Chat</Link></li>
-          </ul>
-        </nav>
+        
         <nav>
           <div className="grid grid-flow-col gap-4">
             <a>

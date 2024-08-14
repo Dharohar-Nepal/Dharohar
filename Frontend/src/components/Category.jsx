@@ -1,4 +1,4 @@
-import Card from './Card';
+import Card from './Card/Card';
 import React, { useContext, useState } from 'react';
 import { AppContext } from '../context/context';
 

@@ -8,7 +8,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Contact from "./pages/Contact";
 import Login from "./pages/Login";
-import Card from "./components/Card";
+import Card from "./components/Card/Card";
 
 export default function () {
   return (
