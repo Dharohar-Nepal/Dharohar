@@ -9,6 +9,7 @@ import Footer from "./components/Footer";
 import Contact from "./pages/Contact";
 import Login from "./pages/Login";
 import Card from "./components/Card/Card";
+import Description from "./components/Description";
 
 export default function () {
   return (
@@ -23,6 +24,7 @@ export default function () {
           <Route path="/articles" element={<Articles />} />
           <Route path="/chat" element={<Chat />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/card/:id" element={<Description />} />
         </Routes>
         <Footer />
       </Router>

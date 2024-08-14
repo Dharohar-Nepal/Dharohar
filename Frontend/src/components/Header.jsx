@@ -36,10 +36,10 @@ export default function Header() {
                 <div className="navbar-center hidden lg:flex ">
                     <ul className="menu menu-horizontal px-1 text-lg">
                         <li><Link to={'/'}>Home</Link></li>
-                        <li><a href='https://dharohar.streamlit.app/'>Explore</a></li>
+                        <li><Link to={'./explore'}>Explore</Link></li>
                         <li><Link to={'/articles'}>Articles</Link></li>
                         <li><Link to={'/contact'}>Contact</Link></li>
-                        <li><a href='https://dharohar-bot.streamlit.app/'>Chat</a></li>
+                        <li><Link to={'./chat'}>Chat</Link></li>
                     </ul>
                 </div>
                 <div className="navbar-end">

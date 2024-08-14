@@ -10,7 +10,7 @@ export default function Search() {
                     </div>
                 </div>
                 <div className="indicator">
-                    <button className="btn join-item">Search</button>
+                    <button className="btn join-item bg-orange-400">Search</button>
                 </div>
             </div>
         </>
