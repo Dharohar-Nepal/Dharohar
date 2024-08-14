@@ -9,9 +9,9 @@ export default function Contact() {
       >
         <div className="card glass md:w-[40vw]  w-full bg-base-300">
           <div className="card-body">
-            <h2 className="font-bold text-lg text-center">Contact Me !</h2>
+            <h2 className="font-bold text-lg text-center">Contact Us !</h2>
             <p className="text-center">
-              Wanna contact me? Please go through this form.
+              Wanna contact us? Please go through this form.
             </p>
 
             <form className="card-body" id="myForm" action="POST">
@@ -38,7 +38,7 @@ export default function Contact() {
               ></textarea>
 
               <div className="card-actions justify-end">
-                <button className="btn btn-primary">Send</button>
+                <button className="btn bg-orange-400">Send</button>
               </div>
             </form>
           </div>
