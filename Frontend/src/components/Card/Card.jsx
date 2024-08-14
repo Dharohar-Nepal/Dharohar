@@ -7,7 +7,7 @@ export default function Card({ items }) {
       <div className="flex justify-center items-center flex-wrap gap-5 my-10 ">
         {items.map((value) => (
           <div key={value.id}>
-            <div className="card min-w-72 w-96 max-h-96 overflow-hidden text-justify bg-zinc-400 relative shadow-xl hover:transition-all delay-75 h-[40vh]">
+            <div className="card min-w-72 w-96 max-h-96 overflow-hidden text-justify bg-[#f8e1aa] relative shadow-xl hover:transition-all delay-75 h-[40vh]">
               <figure>
                 <img src={value.img} alt="" />
               </figure>
@@ -15,7 +15,7 @@ export default function Card({ items }) {
                 <h2 className="card-title">{value.place}</h2>
               </div>
               
-                <button className="btn bg-green-300">Read More</button>
+                <button className="btn bg-[#92aa0b]">Read More</button>
              
             </div>
           </div>
