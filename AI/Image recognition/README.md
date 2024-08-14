@@ -1,7 +1,3 @@
-# Dharohar(धरोहर)
-
-**Dharohar(धरोहर)** is a tool dedicated to explore the rich cultural and historical heritage of the Far Western Province of Nepal.This is designed to help people recognize and learn about the famous places of the Far Western Province of Nepal, providing detailed descriptions of each place.
-
 ## Features
 
 - Identify famous cultural,historical and natural places in the Far Western Province of Nepal.
@@ -27,36 +23,3 @@ Dharohar(धरोहर) currently includes data for the following places:
 13. **Tripura Sundari (त्रिपुरा सुन्दरी)**
 14. **Ugratara Temple (उग्रतारा मन्दिर)**
 15. **Saket Dham/Vishnu Mandir (साकेत धाम)**
-
-## Installation
-
-To get started with Dharohar(धरोहर), follow these steps:
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/dhirajpant/Dharohar
-   ```
-2. Navigate to the project directory:
-   ```bash
-   cd Dharohar
-   ```
-3. Install the required dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-4. Run the application:
-   ```bash
-   streamlit run app.py
-   ```
-
-## Usage
-
-Dharohar(धरोहर) is currently hosted using Streamlit. You can access the application at [dharohar.streamlit.app](https://dharohar.streamlit.app).
-
-## Contributing
-
-We welcome suggestions and contributions to improve Dharohar. If you have suggestions or want to add more places to the database, please contact us at [official.dhirajpant@gmail.com](mailto:official.dhirajpant@gmail.com).
-
-Enjoy exploring the beautiful places of the Far Western Province of Nepal with Dharohar(धरोहर).
-
-© 2024 Dharohar.All rights reserved
