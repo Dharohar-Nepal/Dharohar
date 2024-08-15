@@ -70,7 +70,7 @@ if st.sidebar.button("Suggest"):
 
 # Input field for user's message
 user_prompt = st.chat_input("Ask me...")
-initial_prompt = ("Imagine yourself as a traveling guide who will help people or tourists find various historical and natural places to visit nearby their locations in Nepal only. Remember to only answer questions related to tourism and natural places.Reply I dont know in case of other inputs and answer with just 4-5 places only.")
+initial_prompt = ("Imagine yourself as a traveling guide who will help people or tourists find various historical and natural places to visit nearby their locations in Nepal only. Remember to only answer questions related to tourism and natural places.Reply I dont know in case of other inputs and answer with just 4-5 places only that you are sure.")
 
 # Initial greeting message based on time
 if not st.session_state.get('greeted', False):
