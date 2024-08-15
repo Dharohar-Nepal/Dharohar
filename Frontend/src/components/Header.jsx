@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Logo from "../assets/images/dharohar.png";
+import { FaUser } from "react-icons/fa";
+
 
 export default function Header() {
   return (
@@ -32,13 +34,13 @@ export default function Header() {
                 <Link to={"/"}>Home</Link>
               </li>
               <li>
-                <Link to={"/explore"}>Explore</Link>
+                <a href="https://dharohar.streamlit.app/">Explore</a>
               </li>
               <li>
                 <Link to={"/articles"}>Articles</Link>
               </li>
               <li>
-                <Link to={"/chat"}>Chat</Link>
+                <a href="https://dharohar-bot.streamlit.app/">Chat</a>
               </li>
               <li>
                 <Link to={"/about"}>About</Link>
@@ -56,13 +58,13 @@ export default function Header() {
               <Link to={"/"}>Home</Link>
             </li>
             <li className="hover:bg-orange-400 rounded-xl">
-              <Link to={"./explore"}>Explore</Link>
+              <a href="https://dharohar.streamlit.app/">Explore</a>
             </li>
             <li className="hover:bg-orange-400 rounded-xl">
               <Link to={"/articles"}>Articles</Link>
             </li>
             <li className="hover:bg-orange-400 rounded-xl">
-              <Link to={"./chat"}>Chat</Link>
+              <a href="https://dharohar-bot.streamlit.app/">Chat</a>
             </li>
             <li className="hover:bg-orange-400 rounded-xl">
               <Link to={"./about"}>About</Link>
@@ -73,7 +75,7 @@ export default function Header() {
           </ul>
         </div>
         <div className="navbar-end">
-          <a className="btn">Button</a>
+           < FaUser className="text-2xl cursor-pointer"/> 
         </div>
       </div>
     </>
