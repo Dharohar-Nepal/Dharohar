@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./Card.css";
+import { Link } from 'react-router-dom';
+import { AppContext } from "../../context/context";
 
 export default function Card({ items }) {
+
   return (
     <>
       <div className="flex justify-center items-center flex-wrap gap-5 my-10 ">
@@ -15,7 +18,7 @@ export default function Card({ items }) {
                 <h2 className="card-title">{value.place}</h2>
                 <p>{value.location}</p>
               </div>
-              <button className="btn bg-orange-400 hover:bg-orange-300">Know More</button>
+              <button className="btn bg-orange-400 hover:bg-orange-300">Read More</button>
             </div>
           </div>
         ))}

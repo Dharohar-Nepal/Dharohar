@@ -5,7 +5,7 @@ import Logo from '../assets/images/dharohar.png'
 export default function Header() {
     return (
         <>
-            <div className="navbar bg-base-300 ">
+            <div className="navbar bg-base-300 z-10">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

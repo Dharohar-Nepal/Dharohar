@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Explore from "./pages/Explore";
@@ -9,10 +9,13 @@ import Footer from "./components/Footer";
 import Contact from "./pages/Contact";
 import Login from "./pages/Login";
 import Card from "./components/Card/Card";
-import Description from "./components/Description";
 import About from "./components/About";
+import Placedetails from "./components/Placedetails";
+import Data  from './Data'
 
 export default function () {
+
+
   return (
     <>
       <Router>
@@ -26,7 +29,7 @@ export default function () {
           <Route path="/chat" element={<Chat />} />
           <Route path="/login" element={<Login />} />
           <Route path="/about" element={<About />} />
-          <Route path="/card/:id" element={<Description />} />
+          <Route path="/card/:id" element={<Placedetails />} />
         </Routes>
         <Footer />
       </Router>
