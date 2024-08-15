@@ -11,7 +11,6 @@ import Login from "./pages/Login";
 import Card from "./components/Card/Card";
 import About from "./components/About";
 import Placedetails from "./components/Placedetails";
-import Data  from './Data'
 
 export default function () {
 

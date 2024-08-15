@@ -5,17 +5,18 @@ import Data from "../Data";
 export default function Placedetails() {
   const { id } = useParams();
 
-  // Log id and its type for debugging
-  console.log("useParams id:", id, "Type:", typeof id);
-
   const [place, setPlace] = useState(null);
 
   useEffect(() => {
+    console.log("Data:", Data);
+    console.log("ID from URL:", id);
     const numericId = parseInt(id, 10);
+    console.log("Numeric ID:", numericId);
 
     const selectedPlace = Data.find((p) => p.id === numericId);
+    console.log("Selected Place:", selectedPlace);
 
-    setPlace(selectedPlace || {});
+    setPlace(selectedPlace);
   }, [id]);
 
   return (
@@ -23,29 +24,33 @@ export default function Placedetails() {
       {place ? (
         <div>
           {
-            /* <h1>{place.place}</h1>
-          <p>{place.location}</p>
-          <img src={place.img} alt={place.place} /> */
-
             <div className="flex items-center justify-center my-10">
-              <div className="card min-w-72 w-1/2 max-w-full h-full text-justify relative shadow-xl hover:transition-all delay-75  hover:border-2 hover:border-orange-400">
+              <div className="card w-full sm:w-full md:w-3/4 lg:w-1/2 xl:w-1/3 h-full text-justify relative shadow-xl hover:transition-all delay-75 hover:border-2 hover:border-orange-400">
                 <figure>
-                  <img src={place.img} alt=""  className="w-auto h-40vh"/>
+                  <img
+                    src={place.img}
+                    alt=""
+                    className="w-full h-auto max-h-96 object-cover"
+                  />
                 </figure>
-                <div className="card-body">
-                  <h2 className="card-title">{place.place}</h2>
-                  <p>{place.location}</p>
-                  <p>{place.description_english}</p>
+                <div className="card-body p-4">
+                  <h2 className="card-title text-xl lg:text-2xl">
+                    {place.place}
+                  </h2>
+                  <p className="text-sm lg:text-base">{place.location}</p>
+                  <p className="text-sm lg:text-base">
+                    {place.description_english}
+                  </p>
                   <hr />
-                  <hr />
-                  <p>{place.description_nepali} </p>
-
-                  <button><Link to={'/'}>Back To Home</Link> </button>
+                  <p className="text-sm lg:text-base">
+                    {place.description_nepali}
+                  </p>
+                  <button className="mt-4 p-2 bg-orange-400 text-white">
+                    <Link to="/">Back To Home</Link>
+                  </button>
                 </div>
               </div>
-              
             </div>
-            
           }
         </div>
       ) : (
