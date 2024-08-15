@@ -10,36 +10,35 @@ export default function Articles() {
 
   return (
     <>
-      {/* <div className="flex justify-center items-center flex-wrap gap-5 m-10">
+      <div className="flex justify-center items-center flex-col flex-wrap gap-5 m-10">
         {articles.map((value) => (
           <div key={value.id}>
-            <div className="w-full flex overflow-hidden max-h-[40vh] shadow-xl">
-              <div className="w-1/2 max-h-[40vh] ">
+            <div className="w-full flex flex-col items-center overflow-hidden shadow-xl">
+              <div className="">
                 <figure>
-                  <img src={value.img} alt="Photo" className="w-full h-auto" />
+                  <img src={value.img} alt="Photo" className="w-[40vw] h-auto" />
                 </figure>
               </div>
-              <div className="card-body w-1/2 text-justify">
+              <div className=" w-[40vw] text-justify">
                 <h2 className="card-title font-bold">{value.title}</h2>
-                <p>{value.description}</p>
-                <section {...getCollapseProps()}>Collapsed content 🙈</section>
+                <p>{value.short}</p>
+                <section {...getCollapseProps()}>{value.description}</section>
                 <div className="card-actions justify-end">
                   <button
-      className="btn btn-primary"
-        {...getToggleProps({
-          onClick: () => setExpanded((prevExpanded) => !prevExpanded),
-        })}
-      >
-        {isExpanded ? "Read Less" : "Read More"}
-      </button>
+                    className="btn btn-primary"
+                    {...getToggleProps({
+                      onClick: () =>
+                        setExpanded((prevExpanded) => !prevExpanded),
+                    })}
+                  >
+                    {isExpanded ? "Read Less" : "Read More"}
+                  </button>
                 </div>
               </div>
             </div>
           </div>
         ))}
-      </div> */}
-
-      
+      </div>
     </>
   );
 }
